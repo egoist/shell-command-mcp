@@ -1,0 +1,27 @@
+{
+  "name": "shell-command-mcp",
+  "description": "MCP server for running shell commands",
+  "type": "module",
+  "version": "0.0.1",
+  "files": [
+    "dist",
+    "/cli.js"
+  ],
+  "bin": "./cli.js",
+  "scripts": {
+    "build": "bun build ./index.ts --packages external --outdir dist",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/js-yaml": "^4.0.9",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "args-tokenizer": "^0.3.0",
+    "js-yaml": "^4.1.0",
+    "tinyexec": "^1.0.1",
+    "zod": "^3.24.2"
+  }
+}
