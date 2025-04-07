@@ -18,7 +18,7 @@ npx -y shell-command-mcp
 ```json
 {
   "mcpServers": {
-    "exa": {
+    "shell-command": {
       "command": "npx",
       "args": ["-y", "shell-command-mcp"],
       "env": {
